@@ -1,7 +1,7 @@
 
-import Feature from './components/Feature';
+import Feature from '../components/Feature';
 
-export default function Home() {
+export default function FeaturePage() {
   return (
     <main className="main-container">
       <Feature />
