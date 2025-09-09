@@ -108,24 +108,26 @@ margin-top: 50px;
   align-items: flex-start;
   padding: 20px;
   background: #fff;
+  border-top: 1px solid #faf5f5;
 }
 
 .featureLeft {
-  flex: 0 0 3%;
+  flex: 0 0 30%; /* or adjust width */
 }
+
+.featureRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 
 .featureLeft h3 {
   font-size: 16px;
   font-weight: 600;
 }
 
-.featureRight {
-  /* gap: 10px; */
-  flex: 1;
-  /* display: flex; */
-  flex-direction: column;
-
-}
 
 .featureRight p {
   font-size: 14px;

@@ -48,22 +48,21 @@ export default function Feature() {
               .fill(0)
               .map((_, i) => (
                 <li className={styles.feature} key={i}>
-                  <article className={styles.feature}>
-                    <header className={styles.featureLeft}>
-                      <h2>Horizontally + Vertically Scalable</h2>
-                    </header>
-                    <section className={styles.featureRight}>
-                      <p>
-                        The Nexus Layer 1 is EVM-compatible and optimized for verifiable compute.
-                        Use Rust or Solidity to deploy applications that invoke zk-proven computation
-                        or power agentic services.
-                      </p>
-                      <figure className={styles.icon}>
-                        <img src="/Socials.svg" alt="Icon" />
-                      </figure>
-                    </section>
-                  </article>
+                <div className={styles.featureLeft}>
+                    <h2>Horizontally + Vertically Scalable</h2>
+                </div>
+                <div className={styles.featureRight}>
+                <p>
+                  The Nexus Layer 1 is EVM-compatible and optimized for verifiable compute.
+                  Use Rust or Solidity to deploy applications that invoke zk-proven computation
+                  or power agentic services.
+                </p>
+                <figure className={styles.icon}>
+                  <img src="/Socials.svg" alt="Icon" />
+                </figure>
+                    </div>
                 </li>
+
               ))}
           </ul>
        
