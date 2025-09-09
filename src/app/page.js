@@ -3,8 +3,8 @@ import Feature from './components/Feature';
 
 export default function Home() {
   return (
-    <div className="main-container">
+    <main className="main-container">
       <Feature />
-    </div>
+    </main>
   );
 }

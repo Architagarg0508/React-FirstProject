@@ -42,6 +42,10 @@
   max-width: 500px;
 }
 
+.pluscircle{
+margin-top: 50px;
+}
+
 .buttonGroup {
   display: flex;
   gap: 20px;
@@ -52,7 +56,7 @@
 .btn {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
+
   font-size: 14px;
   letter-spacing: 1.5px;
   border-radius: 30px;
@@ -97,8 +101,8 @@
   gap: 30px;
   align-items: flex-start;
   border: 1px solid #f9f9f9;
+  border-top: 3px;
   padding: 20px;
-  border-radius: 8px;
   background: #fff;
 }
 
@@ -131,36 +135,7 @@
   color: #000;
 }
 
-.circlePlus {
-  width: 20px;
-  height: 20px;
-  border: 0.1px solid #000;
-  border-radius: 50%;
-  position: relative;
-  margin: 100px 0 20px 0;
-}
 
-.circlePlus::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 0.1px;
-  background-color: #000;
-  transform: translateY(-50%);
-}
-
-.circlePlus::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 0.1px;
-  background-color: #000;
-  transform: translateX(-50%);
-}
 
 .arrowCircle {
   width: 40px;
@@ -180,6 +155,7 @@
   font-size: 1.5em;
   font-weight: normal;
   line-height: 1;
+  margin: 10px;
 }
 
 @media (max-width: 768px) {
