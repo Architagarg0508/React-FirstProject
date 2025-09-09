@@ -49,7 +49,7 @@ export default function Feature() {
               .map((_, i) => (
                 <li className={styles.feature} key={i}>
                 <div className={styles.featureLeft}>
-                    <h2>Horizontally + Vertically Scalable</h2>
+                    <h3>Horizontally + Vertically Scalable</h3>
                 </div>
                 <div className={styles.featureRight}>
                 <p>
