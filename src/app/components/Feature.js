@@ -16,9 +16,9 @@ export default function Feature() {
      
       <div className={styles.right}>
         <header>
-          <h1 className={styles.title}>
+          <h4 className={styles.title}>
             A World <br /> Supercomputer
-          </h1>
+          </h4>
           <p className={styles.tag}>/ THE NEXUS LAYER 1</p>
         </header>
         <picture className={styles.pluscircle}>
