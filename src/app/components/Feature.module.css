@@ -7,14 +7,23 @@
 }
 
 .left img {
+  left: 40px;
+  right: 142px;
+  bottom: 729px;
+  
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 0px;
+  
+  width: auto; 
+  
   background: black;
 }
 
 .stickyImage {
   position: sticky;
+  
+  height: auto;
   top: 20px;
   align-self: flex-start;
 }
@@ -170,7 +179,21 @@ margin-top: 50px;
   .topSection {
     flex-direction: column;
   }
-
+ .left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .left img {
+    position: static; 
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+ .right {
+    width: 100%;
+  }
   .buttonGroup {
     flex-direction: column;
   }
@@ -191,5 +214,8 @@ margin-top: 50px;
 
   .title {
     font-size: 30px;
+  }
+  .desc {
+    margin-top: 60px;
   }
 }
