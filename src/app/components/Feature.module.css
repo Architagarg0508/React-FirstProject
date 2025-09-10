@@ -2,33 +2,33 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  margin-bottom: 60px;
+  padding: 96px 126px 60px 40px;
   position: sticky;
 }
 
+.left {
+  display: flex;
+  align-items: flex-start;
+}
+
 .left img {
-  left: 40px;
-  right: 142px;
-  bottom: 729px;
-  
+  padding: 0;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 0px;
-  
-  width: auto; 
-  
+  width: auto;
   background: black;
 }
 
 .stickyImage {
   position: sticky;
-  
-  height: auto;
   top: 20px;
+  height: auto;
   align-self: flex-start;
 }
 
 .right {
+  padding: 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -56,8 +56,8 @@
   max-width: 500px;
 }
 
-.pluscircle{
-margin-top: 50px;
+.pluscircle {
+  margin-top: 50px;
 }
 
 .buttonGroup {
@@ -130,12 +130,10 @@ margin-top: 50px;
   gap: 10px;
 }
 
-
 .featureLeft h3 {
   font-size: 16px;
   font-weight: 600;
 }
-
 
 .featureRight p {
   font-size: 14px;
@@ -151,8 +149,6 @@ margin-top: 50px;
   font-size: 20px;
   color: #000;
 }
-
-
 
 .arrowCircle {
   width: 40px;
@@ -178,22 +174,27 @@ margin-top: 50px;
 @media (max-width: 768px) {
   .topSection {
     flex-direction: column;
+    padding: 60px 20px;
   }
- .left {
+
+  .left {
     width: 100%;
     display: flex;
     justify-content: center;
   }
+
   .left img {
-    position: static; 
+    position: static;
     width: 100%;
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
   }
- .right {
+
+  .right {
     width: 100%;
   }
+
   .buttonGroup {
     flex-direction: column;
   }
@@ -215,6 +216,7 @@ margin-top: 50px;
   .title {
     font-size: 30px;
   }
+
   .desc {
     margin-top: 60px;
   }
