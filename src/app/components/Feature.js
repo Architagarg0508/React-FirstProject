@@ -34,14 +34,17 @@ export default function Feature() {
           <button className={`${styles.btn} ${styles.black}`}>
             Button Name
             <span className={styles.arrowCircle}>
-              <span className={styles.arrow}><img src="/Arrows.svg"></img></span>
+              <span className={styles.arrow}>
+                <img src="/Arrows.svg"></img>
+              </span>
+              
             </span>
+            
           </button>
           <button className={`${styles.btn} ${styles.outline}`}>
             Button Name<span className={styles.arrow}><img src="/Arrows.svg"></img></span>
           </button>
         </div>
-        
         
           <ul className={styles.features} aria-label="Key features">
             {Array(3)
