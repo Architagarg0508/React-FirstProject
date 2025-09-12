@@ -55,8 +55,6 @@
   font-size: 16px;
   color: #333;
   padding: 96px 83px 31px 0;
-  /* margin-top: 96px;
-  margin-bottom: 30px; */
   max-width: 500px;
 }
 
@@ -84,6 +82,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .black {
@@ -99,12 +98,7 @@
 .outline {
   background-color: transparent;
   color: #000;
-  border: 1px solid #000;
-}
-
-.outline:hover {
-  background-color: #000;
-  color: #fff;
+  border: 1px solid #f0ecec;
 }
 
 .features {
@@ -119,9 +113,9 @@
   display: flex;
   gap: 30px;
   align-items: flex-start;
-
   background: #fff;
   border-top: 1px solid #faf5f5;
+  padding-top: 20px;
 }
 
 .featureLeft {
@@ -165,9 +159,8 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin-left: 15px;
-  margin-right: 0px;
   overflow: hidden;
+  position: relative;
 }
 
 .arrow {
@@ -175,8 +168,9 @@
   font-size: 1.5em;
   font-weight: normal;
   line-height: 1;
-  margin: 10px;
   transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 .arrow2 {
@@ -192,18 +186,26 @@
 .black:hover .arrow2 {
   transform: translateX(0%);
 }
+.outline:hover .arrow {
+  transform: translateX(200%);
+}
 
+.outline:hover .arrow2 {
+  transform: translateX(0%);
+}
 .featuresgrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+
 }
 .featuregrid {
   padding: 20px;
-  border-radius: 12px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  border-top: 1px solid #faf5f5;
+
 }
 
 .featuregridtop h3 {

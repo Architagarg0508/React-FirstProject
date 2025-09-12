@@ -2,7 +2,7 @@ import Image from "next/image";
 import cn from "clsx";
 import styles from "./Feature.module.css";
 
-export default function Feature({ viewmode = "grid" }) {
+export default function Feature({ viewmode = "list" }) {
   return (
     <section className={styles.topSection}>
       <picture className={styles.left}>
@@ -48,8 +48,13 @@ export default function Feature({ viewmode = "grid" }) {
 
           <button className={cn(styles.btn, styles.outline)}>
             Button Name
-            <span className={styles.arrow}>
-              <img src="/Arrows.svg" />
+            <span className={styles.arrowCircle}>
+              <span className={styles.arrow}>
+                <img src="/Arrows.svg" />
+              </span>
+              <span className={styles.arrow2}>
+                <img src="/Arrows.svg" />
+              </span>
             </span>
           </button>
         </div>
