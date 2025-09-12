@@ -3,7 +3,6 @@ import cn from "clsx";
 import styles from "./Feature.module.css";
 
 export default function Feature({ viewmode = "grid" }) {
-  console.log(viewmode);
   return (
     <section className={styles.topSection}>
       <picture className={styles.left}>
@@ -55,11 +54,10 @@ export default function Feature({ viewmode = "grid" }) {
           </button>
         </div>
 
-        {/* One <ul>, switch class via clsx */}
+        {/* One <ul>, choose list/grid via ternary */}
         <ul
           className={cn(
-            viewmode === "list" && styles.features,
-            viewmode === "grid" && styles.featuresgrid
+            viewmode === "grid" ? styles.featuresgrid : styles.features
           )}
           aria-label="Key features"
         >
@@ -69,30 +67,10 @@ export default function Feature({ viewmode = "grid" }) {
               <li
                 key={i}
                 className={cn(
-                  viewmode === "list" && styles.feature,
-                  viewmode === "grid" && styles.featuregrid
+                  viewmode === "grid" ? styles.featuregrid : styles.feature
                 )}
               >
-                {viewmode === "list" && (
-                  <>
-                    <div className={styles.featureLeft}>
-                      <h3>Horizontally + Vertically Scalable</h3>
-                    </div>
-                    <div className={styles.featureRight}>
-                      <p>
-                        The Nexus Layer 1 is EVM-compatible and optimized for
-                        verifiable compute. Use Rust or Solidity to deploy
-                        applications that invoke zk-proven computation or power
-                        agentic services.
-                      </p>
-                      <figure className={styles.icon}>
-                        <img src="/Socials.svg" alt="Icon" />
-                      </figure>
-                    </div>
-                  </>
-                )}
-
-                {viewmode === "grid" && (
+                {viewmode === "grid" ? (
                   <>
                     <figure className={styles.icon}>
                       <img src="/Socials.svg" alt="Icon" />
@@ -107,6 +85,23 @@ export default function Feature({ viewmode = "grid" }) {
                         applications that invoke zk-proven computation or power
                         agentic services.
                       </p>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className={styles.featureLeft}>
+                      <h3>Horizontally + Vertically Scalable</h3>
+                    </div>
+                    <div className={styles.featureRight}>
+                      <p>
+                        The Nexus Layer 1 is EVM-compatible and optimized for
+                        verifiable compute. Use Rust or Solidity to deploy
+                        applications that invoke zk-proven computation or power
+                        agentic services.
+                      </p>
+                      <figure className={styles.icon}>
+                        <img src="/Socials.svg" alt="Icon" />
+                      </figure>
                     </div>
                   </>
                 )}
