@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Feature.module.css";
 
-export default function Feature({ viewmode = "list" }) {
+export default function Feature({ viewmode = "grid" }) {
   console.log(viewmode);
   return (
     <section className={styles.topSection}>
