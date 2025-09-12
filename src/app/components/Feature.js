@@ -54,7 +54,6 @@ export default function Feature({ viewmode = "grid" }) {
           </button>
         </div>
 
-        {/* One <ul>, choose list/grid via ternary */}
         <ul
           className={cn(
             viewmode === "grid" ? styles.featuresgrid : styles.features
