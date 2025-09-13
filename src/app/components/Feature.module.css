@@ -193,7 +193,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-
 }
 .featuregrid {
   padding: 20px;
@@ -201,7 +200,6 @@
   flex-direction: column;
   gap: 24px;
   border-top: 1px solid #faf5f5;
-
 }
 
 .featuregridtop {
@@ -218,8 +216,9 @@
 @media (max-width: 768px) {
   .topSection {
     flex-direction: column;
-    padding: 40px 20px; 
+    padding: 20px;        
     gap: 40px;
+    width: 100%;          
   }
 
   .left {
@@ -228,59 +227,70 @@
     justify-content: center;
     margin-bottom: 20px;
   }
+  .left img {
+    max-width: 100%;  
+    height: auto;
+    display: block;  
+  }
 
   .stickyImage {
     position: static;
     top: auto;
-    width: 100%;
+    width: 100%;          
     height: auto;
   }
 
   .right {
     width: 100%;
+    max-width: 100%;      
   }
 
   .buttonGroup {
     flex-direction: column;
-    width: 100%;
+    align-items: flex-start;
     gap: 12px;
+    width: 100%;          
   }
 
   .btn {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
+    width: auto;          
+    max-width: 100%;      
   }
 
   .feature {
     flex-direction: column;
     gap: 12px;
+    width: 100%;
   }
 
   .featureLeft,
   .featureRight {
     flex: 1;
+    width: 100%;
   }
 
   .title {
     font-size: 30px;
+    word-break: break-word; 
   }
 
   .desc {
     margin-top: 40px;
-    padding: 20px 0;  
+    padding: 20px 0;      
+    max-width: 100%;      
   }
 
   .featuresgrid {
     grid-template-columns: 1fr;
     gap: 20px;
+    width: 100%;           
   }
 
   .featuregrid {
-    border: 1px solid #f0ecec;
-    border-radius: 8px;
+    border-top: 1px solid #f0ecec;
     padding: 16px;
     background: #fff;
+    width: 100%;
   }
 
   .featuregridtop {
