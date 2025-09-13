@@ -2,7 +2,7 @@ import Image from "next/image";
 import cn from "clsx";
 import styles from "./Feature.module.css";
 
-export default function Feature({ viewmode = "list" }) {
+export default function Feature({ viewmode = "grid" }) {
   return (
     <section className={styles.topSection}>
       <picture className={styles.left}>
@@ -15,7 +15,7 @@ export default function Feature({ viewmode = "list" }) {
         />
       </picture>
 
-      <div className={styles.right}>
+      <section className={styles.right}>
         <header>
           <h4 className={styles.title}>
             A World <br /> Supercomputer
@@ -33,15 +33,15 @@ export default function Feature({ viewmode = "list" }) {
           open to anyone.
         </p>
 
-        <div className={styles.buttonGroup} aria-label="Main actions">
+        <nav className={styles.buttonGroup} aria-label="Main actions">
           <button className={cn(styles.btn, styles.black)}>
             Button Name
             <span className={styles.arrowCircle}>
               <span className={styles.arrow}>
-                <img src="/Arrows.svg" />
+                <img src="/Arrows.svg" alt="arrow" />
               </span>
               <span className={styles.arrow2}>
-                <img src="/Arrows.svg" />
+                <img src="/Arrows.svg" alt="arrow" />
               </span>
             </span>
           </button>
@@ -50,14 +50,14 @@ export default function Feature({ viewmode = "list" }) {
             Button Name
             <span className={styles.arrowCircle}>
               <span className={styles.arrow}>
-                <img src="/Arrows.svg" />
+                <img src="/Arrows.svg" alt="arrow" />
               </span>
               <span className={styles.arrow2}>
-                <img src="/Arrows.svg" />
+                <img src="/Arrows.svg" alt="arrow" />
               </span>
             </span>
           </button>
-        </div>
+        </nav>
 
         <ul
           className={cn(
@@ -79,24 +79,22 @@ export default function Feature({ viewmode = "list" }) {
                     <figure className={styles.icon}>
                       <img src="/Socials.svg" alt="Icon" />
                     </figure>
-                    <div className={styles.featuregridtop}>
-                      <h3>Horizontally + Vertically Scalable</h3>
-                    </div>
-                    <div className={styles.featuregridRight}>
-                      <p>
-                        The Nexus Layer 1 is EVM-compatible and optimized for
-                        verifiable compute. Use Rust or Solidity to deploy
-                        applications that invoke zk-proven computation or power
-                        agentic services.
-                      </p>
-                    </div>
+                    <h3 className={styles.featuregridtop}>
+                      Horizontally + Vertically Scalable
+                    </h3>
+                    <p className={styles.featuregridRight}>
+                      The Nexus Layer 1 is EVM-compatible and optimized for
+                      verifiable compute. Use Rust or Solidity to deploy
+                      applications that invoke zk-proven computation or power
+                      agentic services.
+                    </p>
                   </>
                 ) : (
                   <>
-                    <div className={styles.featureLeft}>
-                      <h3>Horizontally + Vertically Scalable</h3>
-                    </div>
-                    <div className={styles.featureRight}>
+                    <h3 className={styles.featureLeft}>
+                      Horizontally + Vertically Scalable
+                    </h3>
+                    <section className={styles.featureRight}>
                       <p>
                         The Nexus Layer 1 is EVM-compatible and optimized for
                         verifiable compute. Use Rust or Solidity to deploy
@@ -106,13 +104,13 @@ export default function Feature({ viewmode = "list" }) {
                       <figure className={styles.icon}>
                         <img src="/Socials.svg" alt="Icon" />
                       </figure>
-                    </div>
+                    </section>
                   </>
                 )}
               </li>
             ))}
         </ul>
-      </div>
+      </section>
     </section>
   );
 }
