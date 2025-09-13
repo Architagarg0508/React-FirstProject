@@ -15,7 +15,7 @@ export default function Feature({ viewmode = "grid" }) {
         />
       </picture>
 
-      <section className={styles.right}>
+      <div className={styles.right}>
         <header>
           <h4 className={styles.title}>
             A World <br /> Supercomputer
@@ -76,9 +76,9 @@ export default function Feature({ viewmode = "grid" }) {
               >
                 {viewmode === "grid" ? (
                   <>
-                    <figure className={styles.icon}>
+                    <picture className={styles.icon}>
                       <img src="/Socials.svg" alt="Icon" />
-                    </figure>
+                    </picture>
                     <h3 className={styles.featuregridtop}>
                       Horizontally + Vertically Scalable
                     </h3>
@@ -94,23 +94,23 @@ export default function Feature({ viewmode = "grid" }) {
                     <h3 className={styles.featureLeft}>
                       Horizontally + Vertically Scalable
                     </h3>
-                    <section className={styles.featureRight}>
+                    <div className={styles.featureRight}>
                       <p>
                         The Nexus Layer 1 is EVM-compatible and optimized for
                         verifiable compute. Use Rust or Solidity to deploy
                         applications that invoke zk-proven computation or power
                         agentic services.
                       </p>
-                      <figure className={styles.icon}>
+                      <picture className={styles.icon}>
                         <img src="/Socials.svg" alt="Icon" />
-                      </figure>
-                    </section>
+                      </picture>
+                    </div>
                   </>
                 )}
               </li>
             ))}
         </ul>
-      </section>
+      </div>
     </section>
   );
 }
